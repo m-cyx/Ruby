@@ -1,8 +1,3 @@
-<<<<<<< Updated upstream
-print "What is your name?\n"
-name = gets
-print "Hello " + name
-=======
 """Принять имя пользователя как аргумент программы.
 Поздороваться с пользователем. Рассмотреть тип строка. получить все
 методы, рассмотреть irb режим, включить снимок экрана в отчет.
@@ -16,4 +11,3 @@ name = gets.chomp
 print "Nice to meet you #{name}"
 
 
->>>>>>> Stashed changes
