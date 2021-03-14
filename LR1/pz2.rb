@@ -9,9 +9,9 @@
 # Переход в irb режим - irb в консоль.
 
 # Здроваемся
-#puts "Hello user! Please enter your name: "
-#name = gets.chomp
-#puts "Nice to meet you #{name}"
+puts "Hello user! Please enter your name: "
+name = gets.chomp
+puts "Nice to meet you #{name}"
 
 # Рассматриваем методы строк
 
@@ -158,3 +158,17 @@ puts("123456789".length) #=> 9
 puts("player 1".succ)       #=> player 2
 
 
+# partition(sep) → [head, sep, tail] - Возвращает список, строка разделяется на голову, тело и хвост по указанному аргументу
+puts("Котопёс".partition("то"))
+
+
+# reverse → new_str - обычный реверс строки
+puts("Гамбургер".reverse)
+
+
+# Ну тут не надо объяснять:
+# to_c → complex
+# to_f → float
+# to_i(base=10) → integer
+# to_r → rational
+# to_str → str
