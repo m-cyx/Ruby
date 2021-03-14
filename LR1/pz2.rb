@@ -10,7 +10,7 @@
 
 # Здроваемся
 puts "Hello user! Please enter your name: "
-name = gets.chomp
+name = ARGV[0]
 puts "Nice to meet you #{name}"
 
 # Рассматриваем методы строк
