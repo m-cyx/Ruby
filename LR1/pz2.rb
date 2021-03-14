@@ -102,3 +102,59 @@ puts("1234".chr)    #=> "1"
 puts("1234".clear) #=> ""
 
 
+# arg1.concat(arg2, ..., argn) - Конкатинирует строки
+puts("Кото".concat("пёс"))          #=> "котопёс"
+
+
+# .delete() - удаляет подстроку из строки
+# .delete_prefix .delete_suffix
+puts("hello".delete "o")    #=> hell
+
+
+# .downcase - понижает регистр
+puts("ЭТО НАПИСАНО НЕ КАПСОМ".downcase)
+
+
+# .empty? - true\false
+puts("".empty?) # => true
+
+
+# .end_with?(args) - Оканчивается ли строка на эти аргументы? true\false
+puts("hello".end_with?("ello"))               #=> true
+# returns true if one of the +suffixes+ matches.
+puts("hello".end_with?("heaven", "ello"))     #=> true
+puts("hello".end_with?("heaven", "paradise")) #=> false
+
+
+# .eql? - true\false, эквивалентны по длине и содержанию
+puts("Кот".eql?("Кот")) # true 
+
+
+# .hex - Из строки (в которой hex число) возвращает int значение
+puts("0x0a".hex)     #=> 10
+
+
+# .include?() - включает ли строка следующую подстроку? true\false
+puts("Чизбургер".include? "бургер") #=> true
+
+
+# .index() - Выдаёт индекс подстроки в строке, integer or nil
+puts("Бургер".index("Б")) #=> 0
+
+
+# .replace - замена строки аргументом
+s = "hello"         #=> "hello"
+puts(s.replace "world")   #=> "world"
+
+# .insert(index, string) - вставляет в строку 
+puts("Раз три".insert(3, " два")) #=> Раз два три
+
+
+# .lenght - integer длина строки
+puts("123456789".length) #=> 9
+
+
+# .succ - Возвращает новую строку - "умный" инкремент
+puts("player 1".succ)       #=> player 2
+
+
