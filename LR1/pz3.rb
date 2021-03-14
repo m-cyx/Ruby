@@ -24,16 +24,16 @@ puts "Привет! Какой у тебя любимый ЯП? "
 name =  gets.chomp.encode("UTF-8")
 
 
-if (name == "ruby" or name == "руби")
+if (name == "ruby" or name == "руби");
     puts "Выходит, что ты подлиза"
-elsif (name == "python" or name == "питон")
+elsif (name == "python" or name == "питон");
     puts "Неплохой выбор, Python тоже ООП, но скоро твоим любимым языком станет Ruby!"
-elsif (name == "c#" or name == "с#" or name == "сишарп")
+elsif (name == "c#" or name == "с#" or name == "сишарп");
     puts "Неплохой выбор, с# тоже ООП, но скоро твоим любимым языком станет Ruby!"
-elsif (name == "java" or name == "джава" or name == "ява")
+elsif (name == "java" or name == "джава" or name == "ява");
     puts "Для меня тёмный лес, но скоро твоим любимым языком станет Ruby!"
-elsif (name == "prolog" or name == "пролог")
+elsif (name == "prolog" or name == "пролог");
     puts("Жесть... Советую попробовать Ruby")
-else
+else;
     puts("#{name}? Хм, не знаю такого ЯП, но ты всё равно попробуй Руби")
 end
