@@ -6,11 +6,9 @@
 """
 
 puts("Привет, введи комманду руби:")
-command1 =gets.chomp
+system ("irb")   НЕ НАДО
+открыть учебник
 
 puts("Привет, введи комманду OS:")
-command2 =gets.chomp
-
-system ("irb, command1")
-system ("exit")
-system (command2)
+command1 =gets.chomp
+system (command1)

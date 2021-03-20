@@ -5,18 +5,22 @@
 Не удалять файл, в следующих лабораторных будет внесена модификация.
 """
 
+# Суммма цифр числа
 def num_sum (n)
     return n.digits.sum
 end
 
+# Максимальная цифра числа
 def m_ax(n)
     return n.digits.max
 end
 
+# Минимальная цифра числа
 def m_in(n)
     return n.digits.min
 end
 
+# Произведение цифр числа
 def m_ult(n)
     res = 1
     lst = n.digits
@@ -25,6 +29,7 @@ def m_ult(n)
     end
     return res
 end
+
 
 puts("Введите число: ")
 n = gets.chomp.to_i
