@@ -8,11 +8,11 @@
 # ARGV[0] - кол-во элементов на чтение, поступает аргументом.
 
 # Чтение списка с клавиатуры. Возвращает список.
-# Способ 4 - через .unshift (will add a new item to the beginning of an array)
+# Способ 5 - через повышение индекса
 def get_list(n) # Кол-во элементов на вход
     arr = []
     for i in 0..n-1
-        arr.unshift(STDIN.gets.chomp)
+        arr[i] = STDIN.gets.chomp
     end
     return arr 
 end
