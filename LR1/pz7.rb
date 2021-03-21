@@ -52,6 +52,13 @@ def col_prost(n, arr)
 end
 
 
+# Сумма цифр числа, делящихся на 3            Можно ещё просто проверить есть ли среди цифр 0,3,6,9
+def sum_num_3(n)
+    for dig in n.digits
+        if dig % 3 == 0
+            sum +=
+
+
 program = ARGV[0] # Параметр запуска
 
 puts("Введите число: ")
