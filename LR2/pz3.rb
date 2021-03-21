@@ -8,11 +8,11 @@
 # ARGV[0] - кол-во элементов на чтение, поступает аргументом.
 
 # Чтение списка с клавиатуры. Возвращает список.
-# Способ 2 - через .push
+# Способ 3 - через <<
 def get_list(n) # Кол-во элементов на вход
     arr = []
     for i in 0..n-1
-        arr.push(STDIN.gets.chomp)
+        arr << STDIN.gets.chomp
     end
     return arr 
 end
