@@ -63,8 +63,19 @@ def sum_num_3(n)
     return sum
 end
 
-puts(sum_num_3(gets.chomp.to_i))
 
+# Делитель числа, являющийся взаимно простым с наибольшим количеством цифр данного числа.
+def del_wich_prost(n)
+    max = 0
+    del = 0
+    for i in 1..n
+        if col_prost(i, n.digits) > max
+            max = col_prost(i, n.digits)
+            del = i
+        end
+    end
+    return del
+end
 
 program = ARGV[0] # Параметр запуска
 
@@ -96,4 +107,9 @@ puts("Количество чисел, взаимно простых с зада
 
 
 puts('Введите число, сумму цифр, делящихся на 3, которого вы хотите найти: ')
-puts(sum_num_3(gets.chomp.to_i))
+puts("Ответ: " + to_str(sum_num_3(gets.chomp.to_i)))
+
+
+
+puts('Введите число, делитель которого, являющийся взаимно простым с наибольшим количеством цифр данного числа, вы хотите найти: ')
+puts("Ответ: " + to_str(del_wich_prost(gets.chomp.to_i)))
