@@ -38,3 +38,9 @@ puts min_el(get_int_list)
 puts lst_sum(get_int_list) 
 
 puts lst_mult(get_int_list) 
+
+"""
+Задание 2. Переписать предыдущее задание без использования циклов на
+основе методов класса Array.
+"""
+# И так без циклов получилось
