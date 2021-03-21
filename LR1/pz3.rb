@@ -16,7 +16,7 @@ if (Gem.win_platform?)
     [STDIN, STDOUT].each do |io|
       io.set_encoding(Encoding.default_external, Encoding.default_internal)
     end
-  end
+end
 
 
 # Здроваемся
