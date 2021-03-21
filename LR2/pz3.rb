@@ -8,14 +8,15 @@
 # ARGV[0] - кол-во элементов на чтение, поступает аргументом.
 
 # Чтение списка с клавиатуры. Возвращает список.
-# Способ 1 - через .insert
+# Способ 2 - через .push
 def get_list(n) # Кол-во элементов на вход
     arr = []
     for i in 0..n-1
-        arr.insert(i, STDIN.gets.chomp)
+        arr.push(STDIN.gets.chomp)
     end
     return arr 
 end
 
 puts("Введи #{ARGV[0]} элемента списка через ENTER")
+# Ответ
 print(get_list(ARGV[0].to_i))
