@@ -54,9 +54,16 @@ end
 
 # Сумма цифр числа, делящихся на 3            Можно ещё просто проверить есть ли среди цифр 0,3,6,9
 def sum_num_3(n)
+    sum = 0
     for dig in n.digits
         if dig % 3 == 0
-            sum +=
+            sum += dig
+        end
+    end
+    return sum
+end
+
+puts(sum_num_3(gets.chomp.to_i))
 
 
 program = ARGV[0] # Параметр запуска
@@ -86,3 +93,7 @@ n = gets.chomp.to_i
 puts('Введите числа, которые хотите проверить: ')
 arr = gets.chomp.split.map(&:to_i)
 puts("Количество чисел, взаимно простых с заданным: #{col_prost(n, arr)}")
+
+
+puts('Введите число, сумму цифр, делящихся на 3, которого вы хотите найти: ')
+puts(sum_num_3(gets.chomp.to_i))
