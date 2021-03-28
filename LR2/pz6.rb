@@ -35,3 +35,16 @@ def z_20 (arr)
     end
     return arr
 end
+
+# Дан целочисленный массив. Найти количество его локальных максимумов.
+def z_32 (arr)
+    local_max = []
+    for i in 1..arr.length-1
+        if arr[i] > arr[i-1]
+            if arr[i] > arr[i+1]
+                local_max << arr[i]
+            end
+        end
+    end
+    return local_max
+end

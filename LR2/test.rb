@@ -1,9 +1,12 @@
 arr = gets.chomp.split.map(&:to_i)
 
-for i in 0..arr.length
-    if arr[i+1] != arr[i]+1
-        arr.insert(i+1, arr[i]+1)
+maxi = []
+    
+for i in 1..arr.length-1
+    if arr[i] > arr[i-1]
+        if arr[i] > arr[i+1]
+            maxi << arr[i]
+        end
     end
 end
-
-print(arr)
+print(maxi)
