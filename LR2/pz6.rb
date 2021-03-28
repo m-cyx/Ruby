@@ -25,3 +25,13 @@ end
 
 print(z_8(arr_input, 2))
 
+# 20. Дан целочисленный массив. Необходимо найти все пропущенные числа.
+# [5,8,10] -> [5,6,7,8,9,10]
+def z_20 (arr)
+    for i in 0..arr.length
+        if arr[i+1] != arr[i]+1
+            arr.insert(i+1, arr[i]+1)
+        end
+    end
+    return arr
+end
