@@ -150,7 +150,7 @@ puts(s.replace "world")   #=> "world"
 puts("Раз три".insert(3, " два")) #=> Раз два три
 
 
-# .lenght - integer длина строки
+# .length - integer длина строки
 puts("123456789".length) #=> 9
 
 

@@ -8,28 +8,20 @@
 Каждый метод отдельный коммит. 
 Итоговая задача – отдельный коммит.
 """
-
-# 8. Дан целочисленный массив. Необходимо найти индексы двух наименьших элементов массива.
-def z_8
+def arr_input
     puts("Введи целочисленный массив через пробел: ")
-    arr = gets.chomp.split.map(&:to_i)
-    min = arr[0]
-    for i in 0..arr.length
-        if arr[i] < min # не работает, что-то с массивом 
-            min = arr[i]
-        end
-    end
-    puts("min1 = #{min}")
-    arr.delete(min)
-    min = arr[0]
-    for i in arr
-        if arr[i] < min
-            min = arr[i]
-        end
-    end
-    
-    puts("min2 = #{min}")
-
+    return arr = gets.chomp.split.map(&:to_i)
 end
 
-z_8
+# 8. Дан целочисленный массив. Необходимо найти индексы двух наименьших элементов массива.
+def z_8 (arr, n) # arr - массив, n - кол-во индексов мин элементов которые нужно вернуть.
+    min_ind = []
+    n.times {
+        min_ind << arr.index(arr.min)
+        arr.delete(arr.min)
+    }
+    return min_ind # Список индексов
+end
+
+print(z_8(arr_input, 2))
+
