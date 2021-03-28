@@ -36,8 +36,9 @@ def z_20 (arr)
     return arr
 end
 
-# Дан целочисленный массив. Найти количество его локальных максимумов.
+#32. Дан целочисленный массив. Найти количество его локальных максимумов.
 def z_32 (arr)
+    arr.sort!
     local_max = []
     for i in 1..arr.length-1
         if arr[i] > arr[i-1]
@@ -47,4 +48,14 @@ def z_32 (arr)
         end
     end
     return local_max
+end
+
+# 44. Дан массив чисел. Необходимо проверить, чередуются ли в нем целые и вещественные числа
+def z_44 (arr) # Чувствителен к вводу с консоли, проверять! Но работает
+    for i in 0..arr.length-1
+        if arr[i].class == arr[i+1].class
+            return false
+        end
+    end
+    return true
 end
