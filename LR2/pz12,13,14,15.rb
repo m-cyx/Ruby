@@ -7,6 +7,8 @@ def sort_by_count_words (lst)
     lst.sort { |str1, str2| str1.split.length <=> str2.split.length }
 
 """ 14 Упорядочить по количеству слов идущих после чисел."""
-
+def sort_by_count_words_after_num (lst)    
+    reg = /\d+(.\d+)?\s[a-z]+/i
+    lst.sort { |str1, str2| str1.scan(reg).length <=> str2.scan(reg).length }
 
 """ 15 Решить задачи по вариантам. 2, 4, 8, 10 """
