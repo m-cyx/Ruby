@@ -12,3 +12,11 @@ def sort_by_count_words_after_num (lst)
     lst.sort { |str1, str2| str1.scan(reg).length <=> str2.scan(reg).length }
 
 """ 15 Решить задачи по вариантам. 2, 4, 8, 10 """
+"""2 В порядке увеличения среднего веса ASCII-кода символа строки"""
+def ascii_weigth (str)
+    string.chars.map { |ch| Integer(ch.ord) }
+end
+
+
+
+"""4 В порядке увеличения квадратичного отклонения среднего веса"""
