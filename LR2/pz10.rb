@@ -19,7 +19,7 @@ end
 
 def unique_sym (str)
     sym = str.downcase.chars.filter { |s| s =~ /[a-z]/}
-    sym.to_set.length
+    sym.uniq.length
 end
 
 """ 17. Дана строка в которой записан путь к файлу. Необходимо найти имя файла без расширения. """
