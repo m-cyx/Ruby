@@ -12,7 +12,7 @@ end
 
 def lowercase (str)
     lowercases = str.chars.filter { |s| s =~ /[a-z]/}
-    lowercases.to_set.to_a
+    lowercases.uniq.to_a
 end
 
 """ 10. Дана строка. Необходимо найти количество задействованных символов латиницы в этой строке (без дубликатов). """
