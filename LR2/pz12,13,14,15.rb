@@ -14,7 +14,7 @@ def sort_by_count_words_after_num (lst)
 """ 15 Решить задачи по вариантам. 2, 4, 8, 10 """
 """2 В порядке увеличения среднего веса ASCII-кода символа строки"""
 def ascii_weigth (str)
-    string.chars.map { |ch| Integer(ch.ord) }
+    str.chars.map { |ch| Integer(ch.ord) }
 end
 
 
