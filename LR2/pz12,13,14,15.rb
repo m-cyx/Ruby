@@ -14,9 +14,11 @@ def sort_by_count_words_after_num (lst)
 """ 15 Решить задачи по вариантам. 2, 4, 8, 10 """
 """2 В порядке увеличения среднего веса ASCII-кода символа строки"""
 def ascii_weigth (str)
-    str.chars.map { |ch| Integer(ch.ord) }
+    str.chars.map { |ch| Integer(ch.ord) } 
+    # .ord Возвращает целочисленный порядковый номер строки из одного символа.
 end
 
-
-
 """4 В порядке увеличения квадратичного отклонения среднего веса"""
+def avg_sqtr (arr, w)
+    Math.sqrt(arr.map { |i| (i - w) ** 2 }.sum / arr.length)
+end
